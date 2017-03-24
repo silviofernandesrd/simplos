@@ -1,0 +1,6 @@
+<h1>Editing Client</h1>
+
+<%= render 'form', client: @client, company: @company %>
+
+<%= link_to 'Show', company_client_path(@client.company, @client) %> |
+<%= link_to 'Back', company_clients_path(@client.company) %>
